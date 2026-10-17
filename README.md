@@ -20,9 +20,7 @@ LearnBot is a web application that enables users to upload PDF documents and ask
 - 💬 **Document Q&A** — Ask questions in natural language.
 - 🔍 **Semantic Search** — Retrieve relevant text chunks using embeddings.
 - 🧠 **RAG Pipeline** — Generate answers grounded in document content.
-- 📑 **Source References** — Display relevant page numbers when available.
-- 💾 **Persistent Storage** — Store document embeddings in ChromaDB.
-- ⚙️ **Flexible Inference** — Support local and hosted language models.
+
 
 ## 🛠️ Tech Stack
 
@@ -101,12 +99,6 @@ LearnBot/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- Python 3.10+
-- Node.js 18+
-- npm
-
 ### 1. Clone the Repository
 
 ```bash
@@ -123,24 +115,12 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-Create a `.env` file based on `.env.example`.
 
-For local inference, configure:
 
-```env
-MODEL_MODE=local
-LOCAL_MODEL_ID=Qwen/Qwen2.5-0.5B-Instruct
-```
-
-Start the backend:
-
-```powershell
-uvicorn main:app --reload --port 8000
-```
 
 ### 3. Set Up the Frontend
 
-Open a second terminal from the project root:
+
 
 ```powershell
 cd frontend
@@ -181,24 +161,11 @@ The backend exposes REST API endpoints through FastAPI.
 
 Open the interactive API documentation at **http://localhost:8000/docs** to explore the available PDF upload, document management, and question-answering routes.
 
-## 🤗 Model Configuration
 
-LearnBot supports two inference modes:
 
-- **Local Mode:** Runs the configured language model on your computer without requiring a Hugging Face access token.
-- **Hosted Mode:** Uses Hugging Face Inference Providers and requires a valid access token and a supported model.
 
-The first run may take longer because the required models need to be downloaded.
 
-## ⚠️ Limitations
 
-- No user authentication or profiles.
-- No persistent chat history.
-- Answer quality depends on PDF text extraction and retrieved context.
-- Local inference performance depends on system hardware.
 
 ---
 
-<p align="center">
-  Built with ❤️ using React, FastAPI, LangChain and Hugging Face.
-</p>
