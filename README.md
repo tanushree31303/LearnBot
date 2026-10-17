@@ -150,16 +150,6 @@ Keep both the frontend and backend terminals running.
 7. Pass the retrieved context to the language model.
 8. Display the generated answer and available source pages.
 
-## 🔌 API Endpoints
-
-The backend exposes REST API endpoints through FastAPI.
-
-| Method | Endpoint | Purpose |
-|---|---|---|
-| GET | `/api/health` | Check backend status |
-| Other routes | `/docs` | View all registered endpoints |
-
-Open the interactive API documentation at **http://localhost:8000/docs** to explore the available PDF upload, document management, and question-answering routes.
 
 
 
