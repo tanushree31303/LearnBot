@@ -1,0 +1,18 @@
+# Environment file with your real Hugging Face token
+.env
+
+# Python virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Local ChromaDB vector store
+chroma_db/
+
+# Temporary uploaded PDFs
+uploads/
+
+# Editor files
+.vscode/
+.idea/

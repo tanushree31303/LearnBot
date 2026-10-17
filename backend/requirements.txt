@@ -1,0 +1,26 @@
+# LearnBot backend dependencies
+#
+# These version ranges are chosen to work together on Python 3.10 - 3.13
+# (Python 3.13 needs NumPy 2.x, which the newer LangChain packages allow).
+
+# --- Web layer ---
+fastapi>=0.115,<0.117
+uvicorn[standard]>=0.30,<0.36
+python-multipart>=0.0.9
+python-dotenv>=1.0
+
+# --- Document loading ---
+pypdf>=5.0
+
+# --- LangChain RAG stack (keep the 0.3.x family together) ---
+langchain>=0.3.20,<0.4
+langchain-core>=0.3.40,<0.4
+langchain-community>=0.3.20,<0.4
+langchain-text-splitters>=0.3.5,<0.4
+langchain-huggingface>=0.1.2,<0.4
+langchain-chroma>=0.1.4,<0.3
+
+# --- Vector store, embeddings and hosted model ---
+chromadb>=0.5.23
+sentence-transformers>=3.3
+huggingface-hub>=0.27
